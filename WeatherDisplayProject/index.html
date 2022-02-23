@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+
+        <h1>Salut , voici la météo dans ces différentes villes</h1>
+
+        <script>
+                var i = 1 ;
+
+                const WeatherAPI = require('C:/Users/mo5/Documents/WeatherDisplayProject_3/WeatherDisplay');     
+                const asyncApiCall = async () => {
+                    if(i==1){
+                    const response = await WeatherAPI.getWeather('London,GB');
+                    console.log(response.data.data.weather.heading);
+                    console.log(response.data.data.weather);
+
+
+
+
+
+
+
+
+
+                    console.log(response.data.data.main.heading);
+                    console.log(response.data.data.main);
+
+                    console.log(response.data.data.visibility.heading);
+                    console.log(response.data.data.visibility);
+
+                    console.log(response.data.data.wind.heading);
+                    console.log(response.data.data.wind);
+
+                    console.log(response.data.data.clouds.heading);
+                    console.log(response.data.data.clouds);
+
+                    console.log(response.data.data.name.heading);
+                    console.log(response.data.data.name);
+
+
+                        i++ ;
+                    }
+
+                    else if(i==2){
+                    const response = await WeatherAPI.getWeather('Paris,FR');
+                    console.log(response.data.data.weather.heading);
+                    console.log(response.data.data.weather);
+
+
+
+
+
+
+
+
+
+                    console.log(response.data.data.main.heading);
+                    console.log(response.data.data.main);
+
+                    console.log(response.data.data.visibility.heading);
+                    console.log(response.data.data.visibility);
+
+                    console.log(response.data.data.wind.heading);
+                    console.log(response.data.data.wind);
+
+                    console.log(response.data.data.clouds.heading);
+                    console.log(response.data.data.clouds);
+
+                    console.log(response.data.data.name.heading);
+                    console.log(response.data.data.name);
+
+
+                        i++ ;
+                    }
+
+                    else if(i==3){
+                    const response = await WeatherAPI.getWeather('Berlin,DE');
+                    console.log(response.data.data.weather.heading);
+                    console.log(response.data.data.weather);
+
+
+
+
+
+
+
+
+
+                    console.log(response.data.data.main.heading);
+                    console.log(response.data.data.main);
+
+                    console.log(response.data.data.visibility.heading);
+                    console.log(response.data.data.visibility);
+
+                    console.log(response.data.data.wind.heading);
+                    console.log(response.data.data.wind);
+
+                    console.log(response.data.data.clouds.heading);
+                    console.log(response.data.data.clouds);
+
+                    console.log(response.data.data.name.heading);
+                    console.log(response.data.data.name);
+
+
+                        i++ ;
+                    }
+
+                    else if(i==4){
+                    const response = await WeatherAPI.getWeather('Dublin,IE');
+                    console.log(response.data.data.weather.heading);
+                    console.log(response.data.data.weather);
+
+
+
+
+
+
+
+
+
+                    console.log(response.data.data.main.heading);
+                    console.log(response.data.data.main);
+
+                    console.log(response.data.data.visibility.heading);
+                    console.log(response.data.data.visibility);
+
+                    console.log(response.data.data.wind.heading);
+                    console.log(response.data.data.wind);
+
+                    console.log(response.data.data.clouds.heading);
+                    console.log(response.data.data.clouds);
+
+                    console.log(response.data.data.name.heading);
+                    console.log(response.data.data.name);
+
+
+                        i++ ;
+                    }
+
+                    else if(i==5){
+                    const response = await WeatherAPI.getWeather('Madrid,ES');
+                    console.log(response.data.data.weather.heading);
+                    console.log(response.data.data.weather);
+
+
+
+
+
+
+
+
+
+                    console.log(response.data.data.main.heading);
+                    console.log(response.data.data.main);
+
+                    console.log(response.data.data.visibility.heading);
+                    console.log(response.data.data.visibility);
+
+                    console.log(response.data.data.wind.heading);
+                    console.log(response.data.data.wind);
+
+                    console.log(response.data.data.clouds.heading);
+                    console.log(response.data.data.clouds);
+
+                    console.log(response.data.data.name.heading);
+                    console.log(response.data.data.name);
+
+
+                        i++ ;
+                    }
+
+                    else {
+                        i = 1 ;
+                    }
+
+                }
+                
+
+
+        </script>
+        <script> var minuteur = window.setInterval(asyncApiCall() ,30000 );  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+        </script>
+    </body>
+
+
+
+
+
+</html>
