@@ -10,7 +10,7 @@ const io = new Server(server);
 
 
 app.get('/', (req, res) => {
-    res.sendFile('C:/Users/mo5/Documents/WeatherDisplayProject_3/index.html');  
+    res.sendFile('C:/Users/mo5/Documents/WeatherDisplayProject/index.html');  
         
 });
 
